@@ -4,14 +4,22 @@
 <meta charset="utf-8">
 <title>Share Bot</title>
 </head>
-<body>
+<body style="font-family:Arial;text-align:center;padding-top:50px">
+
+<h2>Share AI Travel Guide</h2>
+
+<button onclick="shareBot()" style="font-size:20px;padding:15px 30px">
+📢 Share with Friends
+</button>
 
 <script>
-navigator.share({
-  title: 'AI Travel Guide',
-  text: '📤Поделиться ботом!',
-  url: 'https://t.me/SuperTraveler_ai_bot'
-});
+function shareBot() {
+  navigator.share({
+    title: 'AI Travel Guide',
+    text: 'Try this AI Travel Guide bot!',
+    url: 'https://t.me/SuperTraveler_ai_bot'
+  });
+}
 </script>
 
 </body>
